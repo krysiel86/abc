@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'abc'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of abc.'
  
   s.homepage         = 'https://github.com/krysiel86/abc'
@@ -25,8 +25,8 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'abc' => ['abc/Assets/*.png']
   # }
-
+ 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit' 
+  # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
