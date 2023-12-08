@@ -24,13 +24,10 @@ Pod::Spec.new do |s|
   
   s.swift_versions = '5.0'
   
-#    s.pod_target_xcconfig = {
-#         'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-#     }
-  
-    s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'org.cocoapods.abc' }
+ 
+#    s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'org.cocoapods.abc' }
     
-#    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
      s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
      
