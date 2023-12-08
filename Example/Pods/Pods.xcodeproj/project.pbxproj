@@ -51,13 +51,13 @@
 		2F62CBFE271CFC212E5443970C6BD399 /* Pods-abc_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-abc_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		429AD554550A6FD611E77EE62AD06AB9 /* abc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "abc-Info.plist"; sourceTree = "<group>"; };
 		42CA72BBFFDC0FB6D08CE327A6616340 /* Pods-abc_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-abc_Example-Info.plist"; sourceTree = "<group>"; };
-		437ED7FEAC0FB22AB7A5FFE1CCFC1793 /* Pods-abc_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-abc_Example"; path = Pods_abc_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		437ED7FEAC0FB22AB7A5FFE1CCFC1793 /* Pods_abc_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_abc_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5161784CF225B9FB33243451D0571A7E /* Pods-abc_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-abc_Tests.modulemap"; sourceTree = "<group>"; };
 		5C983ACC144E133EBD702DEA98A64291 /* abc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "abc-prefix.pch"; sourceTree = "<group>"; };
 		5D2215F7EAF8C7D4A00A49DFADE25367 /* Pods-abc_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-abc_Tests-umbrella.h"; sourceTree = "<group>"; };
 		5D793599F0D282F46A1CB3D34054D990 /* Pods-abc_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-abc_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F08480797ADF956CBA3A18A37A98388 /* Pods-abc_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-abc_Example.release.xcconfig"; sourceTree = "<group>"; };
-		71783F9048DF62991437E8DC4D451BD8 /* Pods-abc_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-abc_Tests"; path = Pods_abc_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71783F9048DF62991437E8DC4D451BD8 /* Pods_abc_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_abc_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7DE4C4DDBDF2747AA733C9953A6FB9B9 /* abc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "abc-umbrella.h"; sourceTree = "<group>"; };
 		9710F38EA97EF041F19B175AB5DA1728 /* Pods-abc_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-abc_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -155,8 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				FB97D7A04260C1E3FF5FE054ECD8C5FD /* abc.framework */,
-				437ED7FEAC0FB22AB7A5FFE1CCFC1793 /* Pods-abc_Example */,
-				71783F9048DF62991437E8DC4D451BD8 /* Pods-abc_Tests */,
+				437ED7FEAC0FB22AB7A5FFE1CCFC1793 /* Pods_abc_Example.framework */,
+				71783F9048DF62991437E8DC4D451BD8 /* Pods_abc_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -287,7 +287,7 @@
 			);
 			name = "Pods-abc_Example";
 			productName = Pods_abc_Example;
-			productReference = 437ED7FEAC0FB22AB7A5FFE1CCFC1793 /* Pods-abc_Example */;
+			productReference = 437ED7FEAC0FB22AB7A5FFE1CCFC1793 /* Pods_abc_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C4B79CE93E8F8388E22C0E3F03A0B41A /* Pods-abc_Tests */ = {
@@ -306,7 +306,7 @@
 			);
 			name = "Pods-abc_Tests";
 			productName = Pods_abc_Tests;
-			productReference = 71783F9048DF62991437E8DC4D451BD8 /* Pods-abc_Tests */;
+			productReference = 71783F9048DF62991437E8DC4D451BD8 /* Pods_abc_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -422,7 +422,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-abc_Tests/Pods-abc_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-abc_Tests/Pods-abc_Tests.modulemap";
@@ -490,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,7 +525,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -548,7 +548,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-abc_Example/Pods-abc_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-abc_Example/Pods-abc_Example.modulemap";
@@ -618,7 +618,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -647,7 +647,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-abc_Tests/Pods-abc_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-abc_Tests/Pods-abc_Tests.modulemap";
@@ -680,7 +680,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-abc_Example/Pods-abc_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-abc_Example/Pods-abc_Example.modulemap";
@@ -722,7 +722,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
