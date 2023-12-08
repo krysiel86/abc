@@ -69,7 +69,7 @@
 		C00AA8517E4114F8A4217BA9AF25E072 /* Pods-abc_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-abc_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D801ACA34BDE6EC9C97DB1E291F3E103 /* Pods-abc_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-abc_Tests-Info.plist"; sourceTree = "<group>"; };
 		E8860F629A016D6D78DE0D1FC592552A /* Pods-abc_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-abc_Example-umbrella.h"; sourceTree = "<group>"; };
-		FB97D7A04260C1E3FF5FE054ECD8C5FD /* abc */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = abc; path = abc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB97D7A04260C1E3FF5FE054ECD8C5FD /* abc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = abc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +154,7 @@
 		66F4050E6104C73C561D3E6FACA3C650 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB97D7A04260C1E3FF5FE054ECD8C5FD /* abc */,
+				FB97D7A04260C1E3FF5FE054ECD8C5FD /* abc.framework */,
 				437ED7FEAC0FB22AB7A5FFE1CCFC1793 /* Pods-abc_Example */,
 				71783F9048DF62991437E8DC4D451BD8 /* Pods-abc_Tests */,
 			);
@@ -268,7 +268,7 @@
 			);
 			name = abc;
 			productName = abc;
-			productReference = FB97D7A04260C1E3FF5FE054ECD8C5FD /* abc */;
+			productReference = FB97D7A04260C1E3FF5FE054ECD8C5FD /* abc.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		94F362E3EEC045F476B55B3CA4538334 /* Pods-abc_Example */ = {
@@ -517,7 +517,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/abc/abc-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/abc/abc-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/abc/abc.modulemap";
 				PRODUCT_MODULE_NAME = abc;
@@ -714,7 +714,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/abc/abc-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/abc/abc-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/abc/abc.modulemap";
 				PRODUCT_MODULE_NAME = abc;
