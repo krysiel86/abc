@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'abc'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A short description of abc.'
  
   s.homepage         = 'https://github.com/krysiel86/abc'
@@ -27,8 +27,6 @@ Pod::Spec.new do |s|
  
     s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'io.krysiel.abc' }
     
-#    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  
      s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
      
      s.info_plist = {
