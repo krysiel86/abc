@@ -28,8 +28,9 @@ Pod::Spec.new do |s|
 #         'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
 #     }
   
-#    s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'io.krysiel86.abc' }
-    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'org.cocoapods.abc' }
+    
+#    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
      s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
      
