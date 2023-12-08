@@ -22,6 +22,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'abc/Classes/**/*'
   
+  s.swift_versions = '5.0'
+  
   # s.resource_bundles = {
   #   'abc' => ['abc/Assets/*.png']
   # }
