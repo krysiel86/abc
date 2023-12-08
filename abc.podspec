@@ -27,6 +27,10 @@ Pod::Spec.new do |s|
  
      s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'io.krysiel.abc' }
     
+    s.pod_target_xcconfig = {
+      'INFOPLIST_FILE' => '${PODS_TARGET_SRCROOT}/Resources/abc-Info.plist'
+    }
+    
      s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
      
      s.info_plist = { 'CFBundleIdentifier' => 'io.krysiel.abc' }
