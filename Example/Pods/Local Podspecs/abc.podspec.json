@@ -1,0 +1,22 @@
+{
+  "name": "abc",
+  "version": "0.1.0",
+  "summary": "A short description of abc.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/myoungin86/abc",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "myoungin86": "myoungin@tpmn.io"
+  },
+  "source": {
+    "git": "https://github.com/myoungin86/abc.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "abc/Classes/**/*"
+}
