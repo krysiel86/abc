@@ -24,6 +24,18 @@ Pod::Spec.new do |s|
   
   s.swift_versions = '5.0'
   
+  s.pod_target_xcconfig = {
+         'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+     }
+     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+     
+     s.info_plist = {
+         'CFBundleIdentifier' => 'org.cocoapods.{library-name}'
+     }
+     s.resource_bundles = {
+         'PerfittPartners_iOS' => ['{library-name}/**/*']
+     }
+  
   # s.resource_bundles = {
   #   'abc' => ['abc/Assets/*.png']
   # }
