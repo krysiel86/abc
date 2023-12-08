@@ -28,14 +28,15 @@ Pod::Spec.new do |s|
 #         'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
 #     }
   
-    s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'io.krysiel86.abc' }
-
+#    s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'io.krysiel86.abc' }
+    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
      s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
      
      s.info_plist = {
          'CFBundleIdentifier' => 'org.cocoapods.{library-name}'
      }
+     
      s.resource_bundles = {
          'PerfittPartners_iOS' => ['{library-name}/**/*']
      }
