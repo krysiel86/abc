@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
      s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
      
      s.info_plist = {
-         'CFBundleIdentifier' => 'org.cocoapods.{library-name}'
+         'CFBundleIdentifier' => 'org.cocoapods.abc'
      }
      
      s.resource_bundles = {
