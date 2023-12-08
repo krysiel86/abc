@@ -24,9 +24,13 @@ Pod::Spec.new do |s|
   
   s.swift_versions = '5.0'
   
-  s.pod_target_xcconfig = {
+    s.pod_target_xcconfig = {
          'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
      }
+  
+    s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'io.krysie86.iosLibrary' }
+
+  
      s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
      
      s.info_plist = {
